@@ -12,10 +12,7 @@ function getRandomNumber (min, max) {
 getRandomNumber(0, 60);
 
 function stringValidation (text, maxTextLenght) {
-  if (text.length > maxTextLenght) {
-    return false;
-  }
-  return true;
+  return text.length > maxTextLenght;
 }
 
-stringValidation('Привет', 3);
+stringValidation('Привет', 140);
